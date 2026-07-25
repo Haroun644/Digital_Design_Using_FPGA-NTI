@@ -1,37 +1,32 @@
-# 🚀 RISC-V RV32I Processor
+# 💻 Digital Design Using FPGA - NTI Training Program
 
-## 📌 Project Overview
-This folder contains the RTL implementation of a **32-bit RISC-V Processor** supporting the **RV32I Base Integer Instruction Set**. This design was developed as the final project for the **Digital Design Using FPGA** program by the National Telecommunication Institute (NTI). 
+## 📌 Repository Overview
+Welcome to my repository for the **Digital Design Using FPGA** training program, provided by the **National Telecommunication Institute (NTI)**. 
 
-The processor is designed to execute standard 32-bit instructions efficiently and is optimized for synthesis and deployment on FPGA architectures.
+This repository serves as a comprehensive portfolio of my work throughout the program, showcasing my progression in RTL design, hardware verification, and digital systems architecture. The projects range from foundational combinational and sequential logic circuits to a fully functional 32-bit microprocessor.
 
-## ⚙️ Key Features
-- **Architecture:** 32-bit RISC-V (RV32I Base ISA)
-- **Implementation Style:** Single-Cycle Execution *(Update to "Pipelined" if applicable)*
-- **Hardware Description Language (HDL):** Verilog / SystemVerilog
-- **Instruction Support:** 
-  - **R-type:** Arithmetic and Logic operations
-  - **I-type:** Immediate Arithmetic, Loads, and JALR
-  - **S-type:** Store instructions
-  - **B-type:** Branching instructions
-  - **U-type:** LUI and AUIPC
-  - **J-type:** JAL (Jump and Link)
+## 📁 Repository Structure
+The workspace is organized into the following main directories:
 
-## 🗂️ Core Modules
-The design is structurally modular, comprising the following main blocks:
-* **ALU (Arithmetic Logic Unit):** Handles all mathematical and logical operations.
-* **Control Unit:** Decodes incoming instructions and orchestrates datapath control signals.
-* **Register File:** 32x32-bit registers supporting concurrent read and synchronous write.
-* **Instruction Memory:** Stores the compiled assembly instructions.
-* **Data Memory:** Handles Load/Store operations.
-* **Program Counter (PC):** Manages instruction sequencing and branching targets.
+* **[`/Labs`](./Labs)**: Contains all the practical lab sessions. This includes implementations of fundamental digital blocks (Adders, Multiplexers, Registers) and advanced Finite State Machines (FSMs) like sequence detectors. Each lab features the RTL design alongside its robust testbench for simulation.
+* **[`/Final-Project-RV32I`](./Final-Project-RV32I)**: The capstone project of the training. It features the complete RTL design and verification of a **32-bit RISC-V Processor (RV32I Base ISA)**. The processor is optimized for FPGA synthesis and handles standard instructions including R, I, S, B, U, and J types.
 
-## 🛠️ Tools & Technologies Used
-- **Design & Coding:** Verilog / SystemVerilog
-- **Simulation & Verification:** QuestaSim / ModelSim
-- **Synthesis & FPGA Flow:** Xilinx Vivado
+## 🛠️ Tech Stack & Tools
+Throughout this training, I utilized industry-standard tools and languages for Digital IC Design and Verification:
+- **Hardware Description Languages (HDL):** Verilog, SystemVerilog
+- **Simulation & Verification:** QuestaSim, ModelSim (analyzing wave diagrams and timing logic)
+- **Synthesis & FPGA Implementation:** Xilinx Vivado
 
-## 🚀 How to Run and Simulate
-1. Clone the repository to your local machine:
-   ```bash
-   git clone [https://github.com/Haroun644/Digital_Design_Using_FPGA-NTI.git](https://github.com/Haroun644/Digital_Design_Using_FPGA-NTI.git)
+## 🎯 Program Objectives Achieved
+- Translating complex hardware specifications into efficient, synthesis-ready RTL code.
+- Developing modular, scalable architectures for digital systems.
+- Writing comprehensive testbenches to verify functionality and ensure edge-case coverage prior to FPGA deployment.
+- Understanding datapath integration and control unit orchestration in processor design.
+
+## 👤 About the Author
+**Haroun Taha Omar Metwally**  
+*Electronics and Communications Engineering, Helwan University*  
+Passionate about Digital IC Design, VLSI, and Hardware Verification methodologies.
+
+---
+*Feel free to explore the individual folders for detailed source code, simulation results, and specific project documentation.*
